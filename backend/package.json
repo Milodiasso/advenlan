@@ -1,0 +1,22 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "CRUD and route of advenlan for my personal project of Epitech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " nodemon index.js"
+  },
+  "author": "Saï",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.0",
+    "node": "^18.4.0",
+    "nodemon": "^2.0.19"
+  }
+}
