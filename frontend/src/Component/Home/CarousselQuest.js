@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from 'react-elastic-carousel';
+// import Carousel from 'react-elastic-carousel';
 
 const images = [];
 images.push()
@@ -22,7 +22,7 @@ const Caroussel = () => {
 
     return (
         <div className="slide-container  boxed mr-4 "  >
-            <Carousel itemsToShow={3} loop="infinite" enableAutoPlay={false} >
+            {/* <Carousel itemsToShow={3} loop="infinite" enableAutoPlay={false} >
                 {images.map((val, key) =>
                     <div key={key} className="columns px-5 is-12 medieval-paper hauteur mx-3   ">
                         <div className="column mx-5 mt-6 ">
@@ -32,7 +32,7 @@ const Caroussel = () => {
                         </div>
                     </div>
                 )}
-            </Carousel>
+            </Carousel> */}
         </div>
     )
 

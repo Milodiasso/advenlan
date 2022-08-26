@@ -38,6 +38,9 @@ const Login = (props) => {
         <div className="container">
             <div className="row">
                 <div className="col-lg-3 col-md-2"></div>
+                <div className="auth-bg">
+                    <img src="assets/forest_anime.png" alt="forest" />
+                </div>
                 <div className="col-lg-6 col-md-8 login-box">
                     <div className="col-lg-12 login-key">
                         <i className="fa fa-key" aria-hidden="true"></i>
@@ -48,25 +51,29 @@ const Login = (props) => {
 
                     <div className="col-lg-12 login-form">
                         <div className="col-lg-12 login-form">
-                            <form onSubmit={handleSubmit(handleRegistration)}>
-                                <div className="form-group">
-                                    <label className="form-control-label">EMAIL</label>
-                                    <input type="email" className="form-control" {...register('mail')} />
-                                </div>
-                                <div className="form-group">
-                                    <label className="form-control-label">MOT DE PASSE</label>
-                                    <input type="password" className="form-control" {...register('password')} />
-                                </div>
-
-                                <div className="col-lg-12 loginbttm">
-                                    <div className="col-lg-12 login-btm login-button">
-                                        <button type="submit" className="btn btn-outline-primary">se connecter</button>
+                            <div className="form-auth">
+                                <form onSubmit={handleSubmit(handleRegistration)}>
+                                    <div className="form-group">
+                                        <label className="form-control-label">EMAIL</label>
+                                        <input type="email" className="form-control" {...register('mail')} />
                                     </div>
-                                </div>
-                                <div className="text-light has-text-centered">
-                                    <a href="/registration"> <p className='is-underlined'>Pour s'inscrire cliquer ici</p></a>
-                                </div>
-                            </form>
+                                    <div className="form-group">
+                                        <label className="form-control-label">MOT DE PASSE</label>
+                                        <input type="password" className="form-control" {...register('password')} />
+                                    </div>
+
+                                    <div className="validation">
+                                        <div className="col-lg-12 loginbttm">
+                                            <div className="col-lg-12 login-btm login-button">
+                                                <button type="submit" className="button is-active is-dark is-large is-rounded anirm">se connecter</button>
+                                            </div>
+                                        </div>
+                                        <div className="text-light has-text-centered">
+                                            <a href="/registration"> <p className='is-underlined'>Pour s'inscrire cliquer ici</p></a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-2"></div>

@@ -29,7 +29,10 @@ const Registration = (props) => {
         <div className="container">
             <div className="row">
                 <div className="col-lg-3 col-md-2"></div>
-                <div className="col-lg-6 col-md-8 login-box">
+                <div className="auth-bg">
+                    <img src="assets/forest_anime.png" alt="forest" />
+                </div>
+                <div className="col-lg-6 col-md-8 register-box">
                     <div className="col-lg-12 login-key">
                         <i className="fa fa-key" aria-hidden="true"></i>
                     </div>
@@ -39,6 +42,8 @@ const Registration = (props) => {
 
                     <div className="col-lg-12 login-form">
                         <div className="col-lg-12 login-form">
+                            
+                            <div className="form-auth">
                             <form onSubmit={handleSubmit(handleRegistration)}>
                                 <div className="form-group">
                                     <label className="form-control-label">PSEUDO</label>
@@ -57,15 +62,18 @@ const Registration = (props) => {
                                     <input type="password" className="form-control" i {...register('password')} />
                                 </div>
 
-                                <div className="col-lg-12 loginbttm">
-                                    <div className="col-lg-12 login-btm login-button">
-                                        <button type="submit" className="btn btn-outline-primary">s'inscrire</button>
+                                <div className="validation">
+                                    <div className="col-lg-12 loginbttm">
+                                        <div className="col-lg-12 login-btm login-button">
+                                            <button type="submit" className="button is-active is-dark is-large is-rounded anirm">s'inscrire</button>
+                                        </div>
+                                    </div>
+                                    <div className="text-light has-text-centered">
+                                        <a href="/login"> <p className='is-underlined'>Pour se connecter cliquer ici</p></a>
                                     </div>
                                 </div>
-                                <div className="text-light has-text-centered">
-                                    <a href="/login"> <p className='is-underlined'>Pour se connecter cliquer ici</p></a>
-                                </div>
                             </form>
+                            </div>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-2 text-light"></div>

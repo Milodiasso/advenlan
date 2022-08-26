@@ -496,12 +496,15 @@ code {
   box-sizing: border-box
 }
 
-.login-box {
-  margin-top: 75px;
+.login-box, .register-box {
   height: auto;
-  background: #1A2226;
+  background: #1a2226c9;
   text-align: center;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.login-box {
+  margin-top: 75px;
 }
 
 .login-key {
@@ -524,12 +527,40 @@ code {
 }
 
 .login-form {
+  display: flex;
+  justify-content: center;
   margin-top: 25px;
   text-align: left;
 }
 
+.form-auth {
+  width: 20em;
+}
+
+.form-auth .form-group {
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+}
+
+.form-auth .is-underlined {
+  color: grey;
+}
+
+.form-auth .is-underlined:hover {
+  color: white;
+}
+
+.form-auth .validation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* input[type=text], */
 input[type=email],
+input[name=pseudo],
 input[type=password] {
   background-color: #1A2226;
   border: none;
@@ -541,6 +572,13 @@ input[type=password] {
   margin-bottom: 20px;
   padding-left: 0px;
   color: #ECF0F5;
+}
+
+.form-auth
+input[type=email],
+input[name=pseudo],
+input[type=password] {
+  height: 3em;
 }
 
 .form-group {
@@ -565,9 +603,9 @@ label {
   margin-bottom: 0px;
 }
 
-.form-control-label {
+.form-auth .form-control-label {
   font-size: 10px;
-  color: #6C6C6C;
+  color: white;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -614,7 +652,7 @@ label {
   border-radius: 100%;
 }
 
-.city {
+.city, .auth-bg {
   position: fixed;
   top: -50%;
   left: -50%;
@@ -623,7 +661,7 @@ label {
   z-index: -1;
 }
 
-.city img {
+.city img, .auth-bg img {
   position: absolute;
   top: 0;
   left: 0;
